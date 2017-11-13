@@ -22,16 +22,20 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/imagen.css">
+
 
   </head>
 
   <body id="page-top">
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Juan Chávez</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="hidden">
+          <img id="imagen" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="" style="display: none" onload="mostrarImagen()" style="">
+          <i id="carga" class="fa fa-1x fa-circle-o-notch fa-spin"></i>
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,23 +67,28 @@
 
     <div class="container-fluid p-0">
 
+      <!-- DESCRIPCION -->
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <div class="row">
-            <div class="col-md-4"></div>
+            
             <div class="col-md-4">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+                <img id="imagen" class="img-fluid img-profile img-responsive rounded-circle mx-auto mb-2 perfil" src="img/profile.jpg" alt="" style="display: none" onload="mostrarImagen()">
+                <i id="carga" class="text-center fa fa-5x fa-circle-o-notch fa-spin"></i>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <h1 class="mb-0">Juan J.
+                  <span class="text-primary">Chávez</span>
+                </h1>
+                <div class="subheading mb-5">Urb. Nueva Democracia · Maracaibo, Estado Zulia, Venezuela · (+58) 0412-6830329 ·
+                  <a href="mailto:jjchavez@urbe.edu.ve">jjchavez@urbe.edu.ve</a>
+                </div>
+            </div>
+            
           </div>
           <br>
           
-          <h1 class="mb-0">Juan J.
-            <span class="text-primary">Chávez</span>
-          </h1>
-          <div class="subheading mb-5">Urb. Nueva Democracia · Maracaibo, Estado Zulia, Venezuela · (+58) 0412-6830329 ·
-            <a href="mailto:jjchavez@urbe.edu.ve">jjchavez@urbe.edu.ve</a>
-          </div>
+          
           <p class="mb-5">Experimentado creando paginas Web desde cero de manera Responsive para la buena adaptación a los teléfonos moviles. Conocimientos de Html5, Css3, Base de Datos, Php, Javascript, Java, C# y Python.</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
@@ -103,6 +112,7 @@
         </div>
       </section>
 
+      <!-- EXPERIENCIAS -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experiencias</h2>
@@ -126,6 +136,7 @@
 
       </section>
 
+      <!-- EDUCACION -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Educación</h2>
@@ -156,6 +167,7 @@
         </div>
       </section>
 
+      <!-- HABILIDADES -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Habilidades</h2>
@@ -203,6 +215,7 @@
         </div>
       </section>
 
+      <!-- INTERESES -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Intereses</h2>
@@ -211,6 +224,7 @@
         </div>
       </section>
 
+      <!-- CERTIFICADOS -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Certificaciones</h2>
@@ -237,6 +251,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script src="js/onLoad.js"></script>
 
   </body>
 
