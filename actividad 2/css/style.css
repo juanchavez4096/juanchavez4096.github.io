@@ -1,0 +1,100 @@
+html, body{
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    background-color: #2e7d32;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    box-shadow: 5px 5px 10px;
+
+}
+
+.contenedor{
+    display: flex;
+
+}
+
+ul li{
+    padding: 1.5rem;
+}
+
+.boton{
+    text-decoration: none;
+    color: white;
+
+}
+
+.boton:hover{
+    color: white;
+    background-color: #005005;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-image: url(../assets/rick-and-morty.png);
+}
+
+#descripcion{
+    background-color: #60ad5e;
+}
+
+#rick{
+    background-image: url(../assets/rick.jpeg);;
+}
+
+#morty{
+    background-image: url(../assets/morty.jpg);;
+}
+
+#creadores{
+    background-image: url(../assets/creadores.png);;
+}
+
+p{
+    max-width: 50vh;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+.hijo-footer{
+    flex-grow: 1;
+}
+
+.hijo-footer a:hover{
+}
