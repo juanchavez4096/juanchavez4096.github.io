@@ -127,3 +127,11 @@ a {
 a:active, a:focus, a:hover {
     color: #824027
 }
+
+
+.link {
+    color: #BD5D38;
+    cursor: pointer;
+ }
+.link:hover, .link:focus, .link:active {
+        color: #824027; }
